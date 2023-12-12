@@ -22,8 +22,8 @@
 :root {
   /* Background Color */
   --primary-color: #fd4766;
-  --secondary-color: #0e1525;
-  --bg-dark-blue: #091020;
+  --secondary-color: #1d1e2e;
+  --bg-dark-blue: #0a0000dc;
   --bg-white: #fff;
   --gray-color: #c6c9d8bf;
   --gradient-color: linear-gradient(
@@ -67,6 +67,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
+  border-radius: 10px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -228,10 +229,24 @@ button {
   left: 0;
   width: 100%;
   background-color: var(--bg-dark-blue);
-  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(17, 6, 45, 0.05);
   box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+  -webkit-animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
 }
+@keyframes fadeInDown {
+  0% {
+    top: -30%;
+  }
 
+  50% {
+    top: -15%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
 .header-scrolled .nav-item .nav-link.active,
 .header-scrolled .nav-item .nav-link:hover {
   color: var(--primary-text);
