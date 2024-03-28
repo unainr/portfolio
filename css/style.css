@@ -258,17 +258,29 @@ button {
 }
 
 .darkmode .nav-item .nav-link {
-  color: rgb(245, 245, 245);
+  color: rgb(25, 2, 2) !important;
 }
 
+.darkmode .header-scrolled {
+  background-color: rgba(203, 201, 201, 0.963);
+  box-shadow: 0 4px 6px 0 rgba(8, 7, 8, 0.358);
+}
 .darkmode {
   --primary-color: #fd4766;
   --secondary-color: #fffffff7;
-  --bg-dark-blue: #f5f5f5bd;
+  --bg-dark-blue: #dedcdcc9;
   --bg-white: #fff;
   --primary-text: #fd4766;
   --text-gray: #0b0210;
   --text-white: #130303;
+}
+
+.darkmode .banner_wrapper {
+  background-image: linear-gradient(
+      rgba(33, 25, 25, 0.356),
+      rgba(0, 0, 0, 0.26)
+    ),
+    url("../images/red1.jpg");
 }
 
 /* 3 Banner */
